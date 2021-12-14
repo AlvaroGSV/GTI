@@ -9,17 +9,13 @@ namespace gestor
     public class ListaEdificios
     {
         private List<edificio> edificios = new List<edificio>();
-        public int AgregarEdificio(edificio edifici)
+        public void AgregarEdificio(edificio edifici)
         {
-            int exito = 0;
-            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
-            return exito;
+            edificios.Add(edifici);
         }
-        public List<edificio> GetEdificiosName()
+        public List<edificio> GetAll()
         {
-            return edificios;//Solo para no tener errores
-            //List<string> menu = maneja.PlatilloGenerales();
-            //return menu;
+            return edificios;
         }
     }
 }

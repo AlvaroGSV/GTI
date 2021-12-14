@@ -56,6 +56,7 @@
             this.btnInfraestructura.TabIndex = 10;
             this.btnInfraestructura.Text = "Guardar";
             this.btnInfraestructura.UseVisualStyleBackColor = true;
+            this.btnInfraestructura.Click += new System.EventHandler(this.btnInfraestructura_Click);
             // 
             // textBox2
             // 
@@ -105,6 +106,7 @@
             this.MinimizeBox = false;
             this.Name = "NuevaAula";
             this.Text = "NuevaAula";
+            this.Load += new System.EventHandler(this.NuevaAula_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

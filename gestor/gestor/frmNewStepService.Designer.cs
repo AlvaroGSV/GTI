@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.btnInfraestructura = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,8 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.errorP = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.errorP)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -62,7 +59,6 @@
             this.btnInfraestructura.TabIndex = 28;
             this.btnInfraestructura.Text = "Guardar";
             this.btnInfraestructura.UseVisualStyleBackColor = true;
-            this.btnInfraestructura.Click += new System.EventHandler(this.btnInfraestructura_Click);
             // 
             // label4
             // 
@@ -79,7 +75,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(248, 99);
             this.textBox3.TabIndex = 25;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -96,7 +91,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(248, 20);
             this.textBox2.TabIndex = 23;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -113,7 +107,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(248, 20);
             this.textBox1.TabIndex = 21;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -124,15 +117,11 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "NUMERO DE SERVICIO";
             // 
-            // errorP
-            // 
-            this.errorP.ContainerControl = this;
-            // 
             // frmNewStepService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 303);
+            this.ClientSize = new System.Drawing.Size(279, 303);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnInfraestructura);
             this.Controls.Add(this.label4);
@@ -146,8 +135,6 @@
             this.MinimizeBox = false;
             this.Name = "frmNewStepService";
             this.Text = "frmNewStepService";
-            this.Load += new System.EventHandler(this.frmNewStepService_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.errorP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +151,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ErrorProvider errorP;
     }
 }

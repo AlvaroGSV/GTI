@@ -8,9 +8,10 @@ namespace gestor
 {
     public class serviciosTecnicos
     {
-        string nServicio, tiempoEstimado, nomServicio, descServicio;
+        int nServicio, tiempoEstimado;
+        string nomServicio, descServicio;
 
-        public serviciosTecnicos(string serviocioNum, string tiempoE, string ServicioName, string serviciodesc)
+        serviciosTecnicos(int serviocioNum, int tiempoE, string ServicioName, string serviciodesc)
         {
             nServicio = serviocioNum;
             tiempoEstimado = tiempoE;
@@ -18,7 +19,7 @@ namespace gestor
             descServicio = serviciodesc;
         }
 
-        public string pnservicio
+        public int pnservicio
         {
             get
             {
@@ -30,7 +31,7 @@ namespace gestor
             }
         }
 
-        public string ptiempoestimado
+        public int ptiempoestimado
         {
             get
             {

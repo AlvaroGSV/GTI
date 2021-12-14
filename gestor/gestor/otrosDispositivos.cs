@@ -11,7 +11,7 @@ namespace gestor
         int  idDocumentacion, tiempoVida, mantenimientoMinimo, mantenimientoMaximo, ultimoMantenimiento, aulaNum;
         string idDispositivo, nombre, edificio;
 
-        otrosDispositivos(string IDDISP, int IDDOCUMENT, int TIEMPOVIDA, int MINMANTEN, int MAXMANTEN, int LASTMANTEN, int AULANUM, string NOMBRE, string EDIFICIO)
+        public otrosDispositivos(string IDDISP, int IDDOCUMENT, int TIEMPOVIDA, int MINMANTEN, int MAXMANTEN, int LASTMANTEN, int AULANUM, string NOMBRE, string EDIFICIO)
         {
             idDispositivo = IDDISP;
             idDocumentacion = IDDOCUMENT;

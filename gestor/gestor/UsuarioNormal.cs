@@ -12,9 +12,11 @@ namespace gestor
 {
     public partial class UsuarioNormal : Form
     {
-        public UsuarioNormal()
+        List<string> list;
+        public UsuarioNormal(List<string> listLogged)
         {
             InitializeComponent();
+            list=listLogged;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -30,6 +32,10 @@ namespace gestor
         {
             NuevoReporte newReport = new NuevoReporte();
             newReport.Show();
+        }
+
+        private void UsuarioNormal_Load(object sender, EventArgs e)
+        {
         }
     }
 }

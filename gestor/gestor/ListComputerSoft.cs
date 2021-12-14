@@ -6,20 +6,22 @@ using System.Threading.Tasks;
 
 namespace gestor
 {
-    internal class ListComputerSoft
+    public class ListComputerSoft
     {
         private List<computerSoft> soft = new List<computerSoft>();
-        public int AgregarAula(computerSoft computerSoft)
+        public void Agregar(computerSoft computerSoft)
         {
-            int exito = 0;
-            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
-            return exito;
+            soft.Add(computerSoft);
         }
-        public List<computerSoft> GetAulas()
+        public List<computerSoft> GetAll()
         {
-            return soft;//Solo para no tener errores
-            //List<string> menu = maneja.PlatilloGenerales();
-            //return menu;
+            return soft;
+        }
+        public int getLastId()
+        {
+            int res = 0;
+            res = soft.Count;
+            return res;
         }
     }
 }

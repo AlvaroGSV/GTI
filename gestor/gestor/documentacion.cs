@@ -11,7 +11,7 @@ namespace gestor
         private int idDocumentacion, manual, garantia;
         private string archivoManual, archivoGarantia;
 
-        documentacion(int ID, int Manual, int Garantia, string Tmanual, string Tgarantia)
+        public documentacion(int ID, int Manual, int Garantia, string Tmanual, string Tgarantia)
         {
             idDocumentacion = ID;
             manual = Manual;

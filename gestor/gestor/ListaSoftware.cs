@@ -9,17 +9,54 @@ namespace gestor
     public class ListaSoftware
     {
         private List<software> soft = new List<software>();
-        public int AgregarSoftware(software software)
+        public void AgregarSoftware(software software)
         {
-            int exito = 0;
-            //exito = maneja.RegistraPlatillo(platillo.pDescripcion, platillo.pImprte, platillo.pTiempo);
-            return exito;
+            soft.Add(software);
         }
         public List<software> GetSoftware()
         {
-            return soft;//Solo para no tener errores
-            //List<string> menu = maneja.PlatilloGenerales();
-            //return menu;
+            return soft;
+        }
+        public int getLastId()
+        {
+            int res = 0;
+            res = soft.Count;
+            return res;
+        }
+        public int getByName(string name)
+        {
+            int id = 0;
+            for(int i = 0; i < soft.Count; i++)
+            {
+                if(soft[i].pnombre.ToString() == name) 
+                { 
+                    id = soft[i].pidSoftware;
+                }
+            }
+            return id;
+        }
+
+        public List<string> getSoftNames() 
+        {
+            List<string> names = new List<string>();
+            for (int i = 0; i < soft.Count; i++) 
+            {
+                names.Add(soft[i].pnombre.ToString());
+            }
+            return names;
+        }
+
+        public List<string> getBySO(string name)
+        {
+            List<string> nom = new List<string>();
+            for (int i = 0; i < soft.Count; i++)
+            {
+                if (soft[i].pso.ToString() == name)
+                {
+                    nom.Add(soft[i].pnombre.ToString());
+                }
+            }
+            return nom;
         }
     }
 }
