@@ -12,9 +12,13 @@ namespace gestor
 {
     public partial class TfrmInfraestrucutra : Form
     {
-        public TfrmInfraestrucutra()
+        ListaEdificios listaEdificio;
+        ListaAula listaAula;
+        public TfrmInfraestrucutra(ListaEdificios ListaEdificio, ListaAula listaaula)
         {
             InitializeComponent();
+            listaEdificio = ListaEdificio;
+            listaAula = listaaula;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,13 +32,13 @@ namespace gestor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmNuevoEdificio nuevoEdificio = new frmNuevoEdificio();
+            frmNuevoEdificio nuevoEdificio = new frmNuevoEdificio(listaEdificio);
             nuevoEdificio.Show();
         }
 
         private void btnInfraestructura_Click(object sender, EventArgs e)
         {
-            NuevaAula nuevaAula = new NuevaAula();
+            NuevaAula nuevaAula = new NuevaAula(listaEdificio, listaAula);
             nuevaAula.Show();
         }
     }

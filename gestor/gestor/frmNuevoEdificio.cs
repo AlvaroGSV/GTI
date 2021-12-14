@@ -12,14 +12,25 @@ namespace gestor
 {
     public partial class frmNuevoEdificio : Form
     {
-        public frmNuevoEdificio()
+        edificio Edificio;
+        ListaEdificios listaEdificio;
+        public frmNuevoEdificio(ListaEdificios ListaEdificio)
         {
             InitializeComponent();
+            listaEdificio = ListaEdificio;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnInfraestructura_Click(object sender, EventArgs e)
+        {
+            string id = txtid.Text;
+            string nom = txtNom.Text;
+            Edificio = new edificio(id, nom);
+            listaEdificio.AgregarEdificio(Edificio);
         }
     }
 }

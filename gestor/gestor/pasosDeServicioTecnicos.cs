@@ -8,25 +8,25 @@ namespace gestor
 {
     public class pasosDeServicioTecnicos
     {
-        int  nPaso;
-        string IdServicio, descPaso;
+        int nServicio, nPaso;
+        string descPaso;
 
-        public pasosDeServicioTecnicos(string IDservicio, int Npaso, string Descpaso)
+        pasosDeServicioTecnicos(int Nservicio, int Npaso, string Descpaso)
         {
-            IdServicio = IDservicio;
+            nServicio = Nservicio;
             nPaso = Npaso;
             descPaso = Descpaso;
         }
 
-        public string pIdServicio
+        public int pnServicio
         {
             get
             {
-                return IdServicio;
+                return nServicio;
             }
             set
             {
-                IdServicio = value;
+                nServicio = value;
             }
         }
 

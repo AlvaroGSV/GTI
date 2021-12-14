@@ -10,7 +10,7 @@ namespace gestor
     {
         int idLicencia, idSoftware, ocupado;
         string SerialNum;
-        licencia(int IDLIC, int IDSOFT, int OCUPADO, string SerianNUM)
+        public licencia(int IDLIC, int IDSOFT, int OCUPADO, string SerianNUM)
         {
             idLicencia = IDLIC;
             idSoftware = IDSOFT;
